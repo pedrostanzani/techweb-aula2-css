@@ -27,6 +27,190 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* CSS RESET
+
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* PROJECT SPECIFIC STYLING */
+.logo {
+  height: 3rem;
+  padding: 0.5rem;
+}
+
+.subtitle {
+  padding: 0.25rem;
+}
+
+.appbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: #f7d736;
+  box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.35);
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 32rem;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  background-color: white;
+
+  box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.35);
+}
+
+.form-card-title, .autoresize {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-card-title:focus, .autoresize:focus {
+  outline: none;
+}
+
+.form-card-title {
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.autoresize {
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  border: none;
+  background-color: #f7d736;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.35);
+}
+
+.btn:hover {
+  background-color: rgba(247, 215, 54, 0.9);
+  transition: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  max-width: 85rem;
+  margin: auto;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.75rem;
+}
+
+.card {
+  font-family: 'Permanent Marker', cursive;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 12rem;
+  min-width: 12rem;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    padding: 0 3rem;
+  }
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  color: #4c4c4c;
+}
+
+/* #ead3a7
+#9de0f5
+#ef89ba
+#fae890
+#abe9c1 */
+
+.card-color-1 { background-color: #ead3a7; }
+.card-color-2 { background-color: #9de0f5; }
+.card-color-3 { background-color: #ef89ba; }
+.card-color-4 { background-color: #fae890; }
+.card-color-5 { background-color: #abe9c1; }
+
+.card-rotation-1  { transform: rotate(1deg); }
+.card-rotation-2  { transform: rotate(2deg); }
+.card-rotation-3  { transform: rotate(3deg); }
+.card-rotation-4  { transform: rotate(4deg); }
+.card-rotation-5  { transform: rotate(5deg); }
+
+.card-rotation-6  { transform: rotate(0deg); }
+
+.card-rotation-7  { transform: rotate(-1deg); }
+.card-rotation-8  { transform: rotate(-2deg); }
+.card-rotation-9  { transform: rotate(-3deg); }
+.card-rotation-10 { transform: rotate(-4deg); }
+.card-rotation-11 { transform: rotate(-5deg); }
+
+
+
 /* Você pode usar o CSS comentado abaixo, se ajudar */
 /* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
 /* .btn {
